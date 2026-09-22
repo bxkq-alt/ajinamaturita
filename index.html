@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>English Maturita Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">Maturitní příprava</p>
+        <h1>English Maturita Quiz</h1>
+        <p class="subtitle">Procvič si angličtinu pomocí náhodných maturitních otázek.</p>
+      </div>
+      <button id="restartBtn" class="secondary-btn" type="button">Restart</button>
+    </header>
+
+    <section class="stats">
+      <div class="stat"><span>Otázka</span><strong id="questionNumber">1 / 10</strong></div>
+      <div class="stat"><span>Skóre</span><strong id="score">0</strong></div>
+      <div class="stat"><span>Úspěšnost</span><strong id="percentage">0 %</strong></div>
+    </section>
+
+    <div class="progress-bar"><div id="progress" class="progress"></div></div>
+
+    <section id="quizCard" class="card">
+      <span id="category" class="category">Grammar</span>
+      <h2 id="question">Načítání otázky…</h2>
+      <div id="answers" class="answers"></div>
+      <div id="feedback" class="feedback" aria-live="polite"></div>
+      <button id="nextBtn" class="primary-btn" type="button" disabled>Další otázka</button>
+    </section>
+
+    <section id="resultCard" class="card result" hidden>
+      <div class="result-icon">✓</div>
+      <h2>Kvíz dokončen!</h2>
+      <p id="resultText"></p>
+      <button id="playAgainBtn" class="primary-btn" type="button">Hrát znovu</button>
+    </section>
+
+    <details class="security">
+      <summary>Bezpečnostní upozornění</summary>
+      <p>Aplikace je čistě frontendová. Neobsahuje API klíče a neodesílá odpovědi na server. Do JavaScriptu nikdy nevkládej hesla, tokeny ani jiné tajné údaje.</p>
+    </details>
+
+    <footer>
+      <span>English Maturita Quiz</span>
+      <span>HTML · CSS · JavaScript</span>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
