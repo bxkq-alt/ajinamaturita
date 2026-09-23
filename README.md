@@ -11,11 +11,4 @@ Jednoduchá responzivní webová aplikace pro procvičování angličtiny k matu
 
 ## Funkce
 
-- 10 náhodně vybraných otázek
-- 4 možnosti odpovědi
-- kontrola odpovědi a vysvětlení
-- skóre a úspěšnost
-- progress bar
-- restart kvízu
-- responzivní design
-- bez API klíčů a backendu
+- Vůbec nic.
